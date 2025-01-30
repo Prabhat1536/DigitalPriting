@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Digital Printing</title>
+	</head>
+	<body align="centre">
+		<h1>Login Page</h1>
+		<form>
+			Username :<input type="text" name="t1" value="Username">
+			Password : <input type ="pass" name="p1"  value="Password">
+			<input type ="submit" name="s1" value="submit">  
+		</form>
+	</body>
+
+</html>

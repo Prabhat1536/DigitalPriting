@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo Order Management</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="./script2.js" defer></script>
+    <!-- Add script for handling clicks -->
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo"><u>Digital Printing Photography</u></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#upload-section">Upload Photos</a></li>
+                <li>
+                    <a href="#products-section" class="product-icon" id="product-icon">Products</a>
+                    <!-- Product Pop-up -->
+                    <div class="popup" id="product-popup">
+                        <!-- Select Product Option -->
+                        <div class="select-product">
+                            <h3>Select Product</h3>
+                            <select>
+                                <option value="" disabled selected>Select a product</option>
+                                <option value="photos">Photos</option>
+                                <option value="visiting-cards">Documents</option>
+                                <option value="personalized-gifts">Baner</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#summary-section">Order Summary</a></li>
+                <li><a href="#contact-section">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+    
+        <!-- Upload Section -->
+        <section id="upload-section" class="section">
+            <h2>Upload Your Photos</h2>
+            <p>Select your images to create your custom photo products.</p>
+            <div class="upload-container">
+                <label class="upload-btn" for="photo-upload">Select Photos</label>
+                <input type="file" id="photo-upload" multiple required>
+                <ul id="file-list"></ul>
+            </div>
+        
+            <!-- Customization Options Box -->
+            <div class="customization-options" id="customization-options">
+                <h3>Customization</h3>
+                <!-- <div class="options">
+                    <div class="option-item">
+                   
+                        <span>1. Crop</span>
+                    </div>
+                    <div class="option-item">
+                    
+                        <span>2. Frame Size</span>
+                    </div>
+                    <div class="option-item">
+                     
+                        <span>3. Paper Quality</span>
+                    </div>
+                    <div class="option-item">
+                      
+                        <span>4. Collage Templates</span>
+                    </div>
+                    <div class="option-item">
+                      
+                        <span>5. Enhance</span>
+                    </div>
+                </div> -->
+                <form method="post"> 
+                    <div>
+                        <h4>Select the no. of copies:
+                            <button class="button" id="decrement">-</button>
+                            <input type="number" name="copies" id="input" required>
+                            <button class="button" id="increment">+</button>
+                    </div>
+                    <div>
+                        <h4>Select the size of the Paper :  
+                        <select name="size" id="option" required >
+                            <option value="" selected disabled >Select</option>
+                            <option value="A1">A1 size</option>
+                            <option value="A2">A2 size</option>
+                            <option value="A3">A3 size</option>
+                            <option value="A4">A4 size</option>
+                            <option value="A5">A5 size</option>
+                        </select>
+                    </div>
+                    
+                    <div class="colors">
+                            <h4>Color or B/W :
+                            <input type="radio" name="r1" value="Coloured" > Coloured 
+                            <input type="radio" name="r1" value="b/W"> Black and White
+                   </div>
+                    <div class="submit-container">
+                        <input type="submit" id="addToCart" name="S1" value="Add To Cart">
+                    </div>
+                    
+                 </form>
+                
+            </div>
+
+
+
+
+        </section>
+        </h3>
+
+        <!-- Order Summary Section -->
+        <div>
+            <section id="summary-section" class="section">
+                <h2>Order Summary</h2>
+                <div class="order-summary">
+                    <!-- <ul id="summary-item">
+
+                    </ul> -->
+                    <!-- <div class="summary-item">
+                        <span>Photo Prints (10x)</span>
+                        <span>Rs.15.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Photo Book (1x)</span>
+                        <span>Rs.25.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Canvas Print (2x)</span>
+                        <span>Rs.40.00</span>
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <span>Total:</span>
+                        <span>Rs.80.00</span>
+                    </div> -->
+                    <button class="btn-primary">Checkout</button>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Payment Gateway Section -->
+        <div class="section">
+            <section class="payment-section">
+                <h2>Payment Options</h2>
+                <div class="payment-options">
+                    <img src="paypal.jpg" alt="PayPal">
+                    <img src="gpay.jpg" alt="Google Pay">
+                    <img src="razorpay.jpg" alt="Razorpay">
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact-section" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button class="btn-primary" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 PhotoStore. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
